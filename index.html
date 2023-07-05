@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de formulários</title>
+</head>
+
+<body>
+    <section>
+        <h2>Exercício de Formulários</h2>
+        <form>
+            <fieldset>
+                <section>
+                    <legend> <h3>Cadastro de usuário</h3> </legend>
+
+                    <label for="input_nome"> Nome: </label><br>
+                    <input id="input_nome" type="text" name="nome" placeholder="Digite seu nome aqui..."/><br><br>
+
+                    <label for="input_mail"> Email: </label><br>
+                    <input id="input_mail" type="email" name="email" placeholder="Digite seu email aqui..."/> <br><br>
+
+                    <label for="input_motiv"> O que te motivou participar do evento? </label><br>
+
+                    <textarea id="input_motiv" placeholder="Descreva aqui..."></textarea>
+            
+                    <br>
+                    <br>
+
+                    <label for="input_mod"> Selecione seu módulo </label><br>
+                    <select id="input_mod">
+                        <option value="escolher">Escolher módulo</option>
+                        <option value="convidado">Convidado</option>
+                        <option value="palestrante">Palestrante</option>
+                        <option value="conferencista">Conferencista</option>
+                        <option value="avaliador">Avaliador</option>
+                        <option value="ouvinte">Ouvinte</option>
+                    </select>
+
+                    <br>
+                    <br>
+
+                    <label for="input_password"> Cadastre uma senha: </label><br>
+                    <input id="input_password" type="password" name="senha" placeholder="Digite sua senha aqui..."/><br><br>
+
+                    <label for="input_confpassword"> Confirme sua senha: </label><br>
+                    <input id="input_confpassword" type="password" name="senha" placeholder="Repita a senha..."/><br>
+                
+                    <p>Deseja receber novidades em seu email?</p>
+                    <div>
+                        <label for="input_sim">Sim</label>
+                        <input type="radio" value="sim" name="inputExemplo" id="input_sim">
+
+                        <label for="input_nao">Não</label>
+                        <input type="radio" value="nao" name="inputExemplo" id="input_nao">
+                    </div>
+                    <br>
+                    <button type="submit">Cadastrar</button>
+                </section>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
